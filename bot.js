@@ -28,6 +28,18 @@ client.user.setGame(`7MooDY&LeNarD`,"http://twitch.tv/lenerdyt")
   console.log('')
 });
 
+client.on('message', message => {
+  if (!message.content.startsWith(prefix)) return;
+  const verifed = ["300972049847943169"];
+if (message.content.startsWith(prefix + 'owrbot')) {
+    if(!message.channel.guild) return;
+if( verifed.some(word => message.author.id.includes(word)) ) {    return message.channel.sendMessage("**انت صاحب البوت **")
+} else {
+   message.reply("**انت لست صاحب البوت  صاحب الوت هو @LeNerd#6264 **");   
+}
+}
+});   
+
 
 
 
