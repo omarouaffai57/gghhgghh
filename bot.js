@@ -37,7 +37,7 @@ if (message.content.startsWith(prefix + 'ownerbot')) {
     if(!message.channel.guild) return;
 if( verifed.some(word => message.author.id.includes(word)) ) {    return message.channel.sendMessage("**انت صاحب البوت **")
 } else {
-   message.reply("**انت لسا صاحب البوت**");   
+   message.reply("**انت لستا صاحب البوت**");   
 }
 }
 });   
