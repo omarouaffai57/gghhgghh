@@ -28,6 +28,11 @@ client.user.setGame(`7MooDY&LeNarD`,"http://twitch.tv/lenerdyt")
   console.log('')
 });
 
+
+
+
+
+
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   const verifed = ["300972049847943169"];
